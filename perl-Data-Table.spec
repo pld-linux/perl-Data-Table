@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Data
-%define	pnam	Table
+%define		pdir	Data
+%define		pnam	Table
 Summary:	Data::Table - data type related to database tables, spreadsheets, etc
 Summary(pl):	Data::Table - typ danych dotycz±cy tabel bazodanowych, arkuszy kalkulacyjnych itp.
 Name:		perl-Data-Table

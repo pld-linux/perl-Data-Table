@@ -5,15 +5,15 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Data
 %define	pnam	Table
-Summary:	Data::Table - Data type related to database tables, spreadsheets, etc
-Summary(pl):	Data::Table - Typ danych dotycz±cy tabel bazodanowych, arkuszy kalkulacyjnych itp
+Summary:	Data::Table - data type related to database tables, spreadsheets, etc
+Summary(pl):	Data::Table - typ danych dotycz±cy tabel bazodanowych, arkuszy kalkulacyjnych itp.
 Name:		perl-Data-Table
-Version:	1.36
+Version:	1.39
 Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	42041db94add1b070df355a0b785647b
+# Source0-md5:	022c566a6c7bf7273ebbff3086e3521f
 URL:		http://www.geocities.com/easydatabase/
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13

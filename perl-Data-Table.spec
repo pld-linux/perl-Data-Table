@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Data
 %define	pnam	Table
-Summary:	Data::Table - Data type related to database tables, spreadsheets, etc.
-Summary(pl):	Data::Table - Typ danych dotycz±cy tabel bazodanowych, arkuszy kalkulacyjnych itp.
+Summary:	Data::Table - Data type related to database tables, spreadsheets, etc
+Summary(pl):	Data::Table - Typ danych dotycz±cy tabel bazodanowych, arkuszy kalkulacyjnych itp
 Name:		perl-Data-Table
 Version:	1.36
 Release:	1

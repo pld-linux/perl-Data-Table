@@ -9,13 +9,13 @@ Summary:	Data::Table - Data type related to database tables, spreadsheets, etc
 Summary(pl):	Data::Table - Typ danych dotycz±cy tabel bazodanowych, arkuszy kalkulacyjnych itp
 Name:		perl-Data-Table
 Version:	1.36
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 URL:		http://www.geocities.com/easydatabase/
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -50,7 +50,8 @@ kluczowych lub wzorcach, ³±czenie tabel oraz publikowanie na WWW.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -65,8 +66,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitelib}/Data/*.pm
+%{perl_vendorlib}/Data/*.pm
 # empty autosplit.ix
-#%dir %{perl_sitelib}/auto/Data/Table
-#%%{perl_sitelib}/auto/Data/Table/autosplit.ix
+#%dir %{perl_vendorlib}/auto/Data/Table
+#%%{perl_vendorlib}/auto/Data/Table/autosplit.ix
 %{_mandir}/man3/*

@@ -68,5 +68,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_sitelib}/Data/*.pm
 # empty autosplit.ix
 #%dir %{perl_sitelib}/auto/Data/Table
-#%{perl_sitelib}/auto/Data/Table/autosplit.ix
+#%%{perl_sitelib}/auto/Data/Table/autosplit.ix
 %{_mandir}/man3/*

@@ -8,7 +8,7 @@ Summary:	Data::Table - Data type related to database tables, spreadsheets, etc.
 Summary(pl):	Data::Table - Typ danych dotycz±cy tabel bazodanowych, arkuszy kalkulacyjnych itp.
 Name:		perl-Data-Table
 Version:	1.34
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -31,8 +31,19 @@ operations, as well as more advanced sub-table extraction, table
 sorting, record matching via keywords or patterns, table merging, and
 web publishing.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten pakiet perlowy u¿ywa obiektów Perla 5, aby u³atwiæ manipulowanie
+danymi arkuszy kalkulacyjnych w plikach na dysku, bazach danych i
+publikacjach WWW.
+
+Obiekt tabeli zawiera nag³ówek i dwuwymiarow± tablicê skalarów. Trzy
+metody klasy pozwalaj± u¿ytkownikom tworzyæ obiekt tabeli z pliku
+CSV/TSV lub wyniku zapytania z bazy danych SQL.
+
+Metody tabeli umo¿liwiaj± podstawowe operacje dostêpu, dodawania i
+usuwania wierszy i kolumn, nieco bardziej zaawansowane wyci±ganie
+podtabel, sortowanie tabel, dopasowywanie rekordów po s³owach
+kluczowych lub wzorcach, ³±czenie tabel oraz publikowanie na WWW.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

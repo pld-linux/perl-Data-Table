@@ -8,13 +8,13 @@
 Summary:	Data::Table - data type related to database tables, spreadsheets, etc
 Summary(pl):	Data::Table - typ danych dotycz±cy tabel bazodanowych, arkuszy kalkulacyjnych itp.
 Name:		perl-Data-Table
-Version:	1.40
+Version:	1.42
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b8d1a12b5759065c93ced81bf94c0a7f
+# Source0-md5:	2c50abd8222cf75a350eff199fd506cc
 URL:		http://www.geocities.com/easydatabase/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13

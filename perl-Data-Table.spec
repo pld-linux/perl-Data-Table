@@ -8,7 +8,7 @@
 Summary:	Data::Table - data type related to database tables, spreadsheets, etc
 Summary(pl):	Data::Table - typ danych dotycz±cy tabel bazodanowych, arkuszy kalkulacyjnych itp.
 Name:		perl-Data-Table
-Version:	1.42
+Version:	1.43
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic

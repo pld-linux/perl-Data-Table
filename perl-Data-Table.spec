@@ -1,6 +1,7 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Data
 %define	pnam	Table
@@ -8,7 +9,7 @@ Summary:	Data::Table - Data type related to database tables, spreadsheets, etc.
 Summary(pl):	Data::Table - Typ danych dotycz±cy tabel bazodanowych, arkuszy kalkulacyjnych itp.
 Name:		perl-Data-Table
 Version:	1.34
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -64,5 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitelib}/%{pdir}/*.pm
+%{perl_sitelib}/Data/*.pm
+%dir %{perl_sitelib}/auto/Data/Table
+%{perl_sitelib}/auto/Data/Table/autosplit.ix
 %{_mandir}/man3/*

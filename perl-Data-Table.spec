@@ -8,13 +8,13 @@
 Summary:	Data::Table - data type related to database tables, spreadsheets, etc
 Summary(pl):	Data::Table - typ danych dotycz±cy tabel bazodanowych, arkuszy kalkulacyjnych itp.
 Name:		perl-Data-Table
-Version:	1.43
+Version:	1.47
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d457e695096718edaf4fe150f20fbc99
+# Source0-md5:	40087b9c0945df52d78da475efe8ace3
 URL:		http://www.geocities.com/easydatabase/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -64,13 +64,13 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+# empty autosplit.ix
+rm -f $RPM_BUILD_ROOT%{perl_vendorlib}/auto/Data/Table/autosplit.ix
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %{perl_vendorlib}/Data/*.pm
-# empty autosplit.ix
-#%dir %{perl_vendorlib}/auto/Data/Table
-#%%{perl_vendorlib}/auto/Data/Table/autosplit.ix
 %{_mandir}/man3/*

@@ -6,7 +6,7 @@
 %define		pdir	Data
 %define		pnam	Table
 Summary:	Data::Table - data type related to database tables, spreadsheets, etc
-Summary(pl):	Data::Table - typ danych dotycz±cy tabel bazodanowych, arkuszy kalkulacyjnych itp.
+Summary(pl.UTF-8):   Data::Table - typ danych dotyczÄ…cy tabel bazodanowych, arkuszy kalkulacyjnych itp.
 Name:		perl-Data-Table
 Version:	1.47
 Release:	1
@@ -34,19 +34,19 @@ operations, as well as more advanced sub-table extraction, table
 sorting, record matching via keywords or patterns, table merging, and
 web publishing.
 
-%description -l pl
-Ten pakiet perlowy u¿ywa obiektów Perla 5, aby u³atwiæ manipulowanie
+%description -l pl.UTF-8
+Ten pakiet perlowy uÅ¼ywa obiektÃ³w Perla 5, aby uÅ‚atwiÄ‡ manipulowanie
 danymi arkuszy kalkulacyjnych w plikach na dysku, bazach danych i
 publikacjach WWW.
 
-Obiekt tabeli zawiera nag³ówek i dwuwymiarow± tablicê skalarów. Trzy
-metody klasy pozwalaj± u¿ytkownikom tworzyæ obiekt tabeli z pliku
+Obiekt tabeli zawiera nagÅ‚Ã³wek i dwuwymiarowÄ… tablicÄ™ skalarÃ³w. Trzy
+metody klasy pozwalajÄ… uÅ¼ytkownikom tworzyÄ‡ obiekt tabeli z pliku
 CSV/TSV lub wyniku zapytania z bazy danych SQL.
 
-Metody tabeli umo¿liwiaj± podstawowe operacje dostêpu, dodawania i
-usuwania wierszy i kolumn, nieco bardziej zaawansowane wyci±ganie
-podtabel, sortowanie tabel, dopasowywanie rekordów po s³owach
-kluczowych lub wzorcach, ³±czenie tabel oraz publikowanie na WWW.
+Metody tabeli umoÅ¼liwiajÄ… podstawowe operacje dostÄ™pu, dodawania i
+usuwania wierszy i kolumn, nieco bardziej zaawansowane wyciÄ…ganie
+podtabel, sortowanie tabel, dopasowywanie rekordÃ³w po sÅ‚owach
+kluczowych lub wzorcach, Å‚Ä…czenie tabel oraz publikowanie na WWW.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

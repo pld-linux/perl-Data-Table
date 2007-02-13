@@ -6,7 +6,7 @@
 %define		pdir	Data
 %define		pnam	Table
 Summary:	Data::Table - data type related to database tables, spreadsheets, etc
-Summary(pl.UTF-8):   Data::Table - typ danych dotyczący tabel bazodanowych, arkuszy kalkulacyjnych itp.
+Summary(pl.UTF-8):	Data::Table - typ danych dotyczący tabel bazodanowych, arkuszy kalkulacyjnych itp.
 Name:		perl-Data-Table
 Version:	1.47
 Release:	1
